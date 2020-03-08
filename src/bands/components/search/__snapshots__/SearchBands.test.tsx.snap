@@ -1,0 +1,238 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchBands Renders correctly 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div>
+        <div
+          class="sc-fzozJi cGAKRr"
+        >
+          <form>
+            <div
+              class="sc-AxmLO liHGsN"
+            >
+              <strong>
+                Band name
+              </strong>
+              <input
+                id="name"
+                name="name"
+                placeholder="Band name"
+                type="text"
+                value=""
+              />
+            </div>
+            <div
+              class="sc-AxmLO liHGsN"
+            >
+              <strong>
+                Band genre
+              </strong>
+              <input
+                id="genre"
+                name="genre"
+                placeholder="Band genre"
+                type="text"
+                value=""
+              />
+            </div>
+            <div
+              class="sc-AxmLO liHGsN"
+            >
+              <strong>
+                Band formation from
+              </strong>
+              <input
+                id="formationfrom"
+                name="formationFrom"
+                placeholder="Band formation from"
+                type="text"
+                value=""
+              />
+            </div>
+            <div
+              class="sc-AxmLO liHGsN"
+            >
+              <strong>
+                Band formation to
+              </strong>
+              <input
+                id="formationto"
+                name="formationTo"
+                placeholder="Band formation to"
+                type="text"
+                value=""
+              />
+            </div>
+            <button
+              id="submit-search"
+              type="submit"
+            >
+              Search
+            </button>
+          </form>
+        </div>
+        <div>
+          <div
+            class="sc-Axmtr eiXoys"
+          >
+            <a
+              href="/band/1"
+            >
+              testii
+            </a>
+            <p>
+              finland
+            </p>
+            <p>
+              thrash metal
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div>
+      <div
+        class="sc-fzozJi cGAKRr"
+      >
+        <form>
+          <div
+            class="sc-AxmLO liHGsN"
+          >
+            <strong>
+              Band name
+            </strong>
+            <input
+              id="name"
+              name="name"
+              placeholder="Band name"
+              type="text"
+              value=""
+            />
+          </div>
+          <div
+            class="sc-AxmLO liHGsN"
+          >
+            <strong>
+              Band genre
+            </strong>
+            <input
+              id="genre"
+              name="genre"
+              placeholder="Band genre"
+              type="text"
+              value=""
+            />
+          </div>
+          <div
+            class="sc-AxmLO liHGsN"
+          >
+            <strong>
+              Band formation from
+            </strong>
+            <input
+              id="formationfrom"
+              name="formationFrom"
+              placeholder="Band formation from"
+              type="text"
+              value=""
+            />
+          </div>
+          <div
+            class="sc-AxmLO liHGsN"
+          >
+            <strong>
+              Band formation to
+            </strong>
+            <input
+              id="formationto"
+              name="formationTo"
+              placeholder="Band formation to"
+              type="text"
+              value=""
+            />
+          </div>
+          <button
+            id="submit-search"
+            type="submit"
+          >
+            Search
+          </button>
+        </form>
+      </div>
+      <div>
+        <div
+          class="sc-Axmtr eiXoys"
+        >
+          <a
+            href="/band/1"
+          >
+            testii
+          </a>
+          <p>
+            finland
+          </p>
+          <p>
+            thrash metal
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
