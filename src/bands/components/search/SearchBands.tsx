@@ -42,7 +42,6 @@ export const SearchBands = () => {
 
   const { data, loading, error } = useQuery(GET_BANDS_QUERY, { variables });
 
-  console.log(data)
   const fields: FieldType[] = [
     {
       name: 'name',

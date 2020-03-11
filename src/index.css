@@ -22,11 +22,6 @@ body {
   }
 }
 
-img {
-  width: 100%;
-  height: auto;
-}
-
 div, form {
   padding: 5px;
 }
@@ -49,10 +44,22 @@ h1, h2, h3, h4, h5, h6 {
   margin: 5px;
 }
 
+strong, p {
+  margin: 5px;
+}
+
 button, input, textarea {
   background-color: #282a36;
   color: #f8f8f2;
   margin: 5px;
   padding: 5px;
+  border: 1px solid black;
+}
+
+select {
+  background-color: #282a36;
+  color: #ff79c6;
+  margin: 5px;
+  padding: 4px;
   border: 1px solid black;
 }

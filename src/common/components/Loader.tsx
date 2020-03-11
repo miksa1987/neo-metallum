@@ -13,10 +13,6 @@ const Layout = styled.div`
   right: 0px;
   top: 0px;
   bottom: 0px;
-
-  @media screen and (max-width: 900px) {
-    left: 25vw;
-  }
 `;
 
 export const Loader = () => {

@@ -8,13 +8,13 @@ interface Props {
 
 const Layout = styled.div`
   display: grid;
-  grid-template: 3rem / 4rem 1fr 4rem;
+  grid-template: 2rem / 4rem 1fr 4rem;
   background-color: #44475a;
   border: 1px solid black;
 
   position: fixed;
   bottom: 0px;
-  left: calc(25vw + 1rem + 5px);
+  left: 0px;
   right: 0px;
 
   @media screen and (max-width: 600px) {

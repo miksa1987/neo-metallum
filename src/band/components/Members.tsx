@@ -10,6 +10,8 @@ interface Props {
 const Layout = styled.div`
   display: flex;
   flex-direction: column;
+  background-color: #44475a;
+  border: 1px solid black;
 `;
 
 export const Members: React.FC<Props> = ({ members }) => {

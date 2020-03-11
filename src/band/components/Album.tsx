@@ -19,7 +19,6 @@ const Layout = styled.div`
 `;
 
 export const Album: React.FC<Props> = ({ album }) => {
-  console.log(album)
   return (
     <Layout>
       <strong>{album.name}</strong>

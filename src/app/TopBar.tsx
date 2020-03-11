@@ -1,18 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
+import { Link, useHistory } from 'react-router-dom';
 
 import {
-  CenteredButton,
   CenteredDiv
 } from '../common';
 
-interface Props {
-  setSidebarVisible: () => void
-}
-
 const Layout = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   background-color: #44475a;
   border: 1px solid black;
@@ -23,19 +19,75 @@ const Layout = styled.div`
   right: 0px;
 
   height: 3rem;
-
-  @media screen and (max-width: 600px) {
-    display: grid;
-    grid-template: 3rem / 3rem 1fr;
-  }
 `;
 
-export const TopBar: React.FC<Props> = ({ setSidebarVisible }) => {
+interface Item {
+  name: string
+  value: string
+  path: string
+}
+
+const bandItems: Item[] = [
+  {
+    name: 'Bands',
+    value: 'default',
+    path: '/'
+  },
+  {
+    name: 'By letter',
+    value: 'byletter',
+    path: '/bands/byletter/a'
+  },
+  {
+    name: 'By country',
+    value: 'bycountry',
+    path: '/bands/bycountry'
+  },
+  {
+    name: 'By genre',
+    value: 'bygenre',
+    path: '/bands/bygenre'
+  }
+];
+
+export const TopBar = () => {
+  const history = useHistory();
+
+  const [ selectedBandItem, setSelectedBandItem ] = useState(bandItems[0]);
+
+  const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    const { target: { value } } = event;
+
+    const selectedItem: Item | undefined = bandItems.find(item => item.value === value);
+
+    if (selectedItem !== undefined) {
+      history.push(selectedItem.path);
+      setSelectedBandItem(selectedItem);
+    }
+  }
+
+  const handleClick = () => {
+    history.push(selectedBandItem.path);
+  }
+
   return (
     <Layout>
-      <CenteredButton className='sidebar-menu-button' onClick={setSidebarVisible}>=</CenteredButton>
       <CenteredDiv>
-        METALLUM
+        <Link to='/'><h2>METALLUM</h2></Link>
+        <select onChange={handleChange}>
+          {bandItems.map((item, idx) => 
+            <option 
+              key={idx} 
+              value={item.value}
+              onClick={handleClick}
+            >
+              {item.name}
+            </option>)}
+        </select>
+
+        <button onClick={() => history.push('/bands/search')}>
+          Search
+        </button>
       </CenteredDiv>
     </Layout>
   );

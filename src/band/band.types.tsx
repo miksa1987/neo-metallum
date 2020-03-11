@@ -1,4 +1,5 @@
 export interface BandType {
+  id?: string
   name: string
   genre: string
   country: string
@@ -13,14 +14,14 @@ export interface BandType {
 }
 
 export interface AlbumType {
-  id: string
+  id?: string
   name: string
   type: string
   releaseDate: string
 }
 
 export interface ArtistType {
-  id: string
+  id?: string
   name: string
   role: string
 }

@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import { BandType, ArtistType } from '../band.types';
 
 import { Image } from '../../common';
-import { Members } from './Members';
 
 const Layout = styled.div`
   display: grid;
@@ -25,10 +24,9 @@ const FlexColumn = styled.div`
 
 interface Props {
   band: BandType
-  members: ArtistType[]
 }
 
-export const BandInfo: React.FC<Props> = ({ band, members }) => {
+export const BandInfo: React.FC<Props> = ({ band }) => {
   return (
     <Layout>
       <FlexColumn>
@@ -43,7 +41,6 @@ export const BandInfo: React.FC<Props> = ({ band, members }) => {
         <p>Status: {band.status}</p>
         <p>Years active: {band.yearsActive}</p>
         <p>Label: {band.label}</p>
-        <Members members={members} />
       </FlexColumn>
     </Layout>
   );

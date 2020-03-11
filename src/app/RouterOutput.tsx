@@ -18,13 +18,11 @@ const Layout = styled.div`
 
 export const RouterOutput = () => {
   return (
-    <Layout>
       <Switch>
         <Route exact path='/' render={() => <Intro />} />
         <Route exact path='/bands/byletter/:letter' render={() => <BandsByLetter />} />
         <Route exact path='/bands/search' render={() => <SearchBands />} />
         <Route exact path='/band/:id' render={() => <Band />} />
       </Switch>
-    </Layout>
   );
 }
