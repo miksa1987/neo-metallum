@@ -21,6 +21,11 @@ const Layout = styled.div`
   height: 3rem;
 `;
 
+const Image = styled.img`
+  width: 10rem;
+  height: auto;
+`;
+
 interface Item {
   name: string
   value: string
@@ -39,9 +44,9 @@ const bandItems: Item[] = [
     path: '/bands/byletter/a'
   },
   {
-    name: 'By country',
-    value: 'bycountry',
-    path: '/bands/bycountry'
+    name: 'Random band',
+    value: 'random',
+    path: '/bands/random'
   },
   {
     name: 'By genre',
@@ -55,37 +60,50 @@ export const TopBar = () => {
 
   const [ selectedBandItem, setSelectedBandItem ] = useState(bandItems[0]);
 
-  const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+  const handleBandSelectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const { target: { value } } = event;
 
     const selectedItem: Item | undefined = bandItems.find(item => item.value === value);
 
+    console.log(selectedItem)
     if (selectedItem !== undefined) {
       history.push(selectedItem.path);
       setSelectedBandItem(selectedItem);
     }
   }
 
-  const handleClick = () => {
+  const handleBandSelectClick = () => {
     history.push(selectedBandItem.path);
+  }
+
+  const handleHomeClick = () => {
+    // TYPING
+    const bandsSelect: any = document.getElementById('bands-select-path');
+    if (bandsSelect.value !== null) {
+      bandsSelect.value = 'default';
+    }
   }
 
   return (
     <Layout>
       <CenteredDiv>
-        <Link to='/'><h2>METALLUM</h2></Link>
-        <select onChange={handleChange}>
+        <Link to='/' onClick={handleHomeClick} id='neo-metallum-logo'>
+          <Image src='/images/logo.png' />
+        </Link>
+
+        <select id='bands-select-path' onChange={handleBandSelectChange}>
           {bandItems.map((item, idx) => 
             <option 
               key={idx} 
+              id={`bands-select-${item.value}`}
               value={item.value}
-              onClick={handleClick}
+              onClick={handleBandSelectClick}
             >
               {item.name}
             </option>)}
         </select>
 
-        <button onClick={() => history.push('/bands/search')}>
+        <button id='search-bands-button' onClick={() => history.push('/bands/search')}>
           Search
         </button>
       </CenteredDiv>

@@ -6,34 +6,106 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-Axmtr rPELz"
+        class="sc-Axmtr dCRfkC"
       >
-        <button
-          class="sc-AxjAm ea-DYQF sidebar-menu-button"
-        >
-          =
-        </button>
         <div
           class="sc-AxirZ enylqG"
         >
-          METALLUM
+          <a
+            href="/"
+            id="neo-metallum-logo"
+          >
+            <img
+              class="sc-AxmLO hUFcoG"
+              src="/images/logo.png"
+            />
+          </a>
+          <select
+            id="bands-select-path"
+          >
+            <option
+              id="bands-select-default"
+              value="default"
+            >
+              Bands
+            </option>
+            <option
+              id="bands-select-byletter"
+              value="byletter"
+            >
+              By letter
+            </option>
+            <option
+              id="bands-select-random"
+              value="random"
+            >
+              Random band
+            </option>
+            <option
+              id="bands-select-bygenre"
+              value="bygenre"
+            >
+              By genre
+            </option>
+          </select>
+          <button
+            id="search-bands-button"
+          >
+            Search
+          </button>
         </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-Axmtr rPELz"
+      class="sc-Axmtr dCRfkC"
     >
-      <button
-        class="sc-AxjAm ea-DYQF sidebar-menu-button"
-      >
-        =
-      </button>
       <div
         class="sc-AxirZ enylqG"
       >
-        METALLUM
+        <a
+          href="/"
+          id="neo-metallum-logo"
+        >
+          <img
+            class="sc-AxmLO hUFcoG"
+            src="/images/logo.png"
+          />
+        </a>
+        <select
+          id="bands-select-path"
+        >
+          <option
+            id="bands-select-default"
+            value="default"
+          >
+            Bands
+          </option>
+          <option
+            id="bands-select-byletter"
+            value="byletter"
+          >
+            By letter
+          </option>
+          <option
+            id="bands-select-random"
+            value="random"
+          >
+            Random band
+          </option>
+          <option
+            id="bands-select-bygenre"
+            value="bygenre"
+          >
+            By genre
+          </option>
+        </select>
+        <button
+          id="search-bands-button"
+        >
+          Search
+        </button>
       </div>
     </div>
   </div>,
