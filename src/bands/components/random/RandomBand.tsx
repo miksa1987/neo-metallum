@@ -19,7 +19,6 @@ export const RandomBand = () => {
     return <Loader />;
   }
 
-  console.log(data);
   const id = data.randomBand.id;
 
   return (
