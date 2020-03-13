@@ -45,7 +45,9 @@ export const Band: React.FC<Props> = ({ band }) => {
   return (
     <div>
     <Layout>
-      <Link to={`/band/${band.id}`}><h2>{band.name}</h2></Link>
+      <Link id='band-info-link' to={`/band/${band.id}`}>
+        <h2>{band.name}</h2>
+      </Link>
       <Image src={image} alt='band' />
       <strong>{band.country}</strong>
       <p>{band.genre}</p>

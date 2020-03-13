@@ -7,11 +7,11 @@ Object {
     <div>
       <div>
         <div
-          class="sc-fzozJi cGAKRr"
+          class="sc-fzoLsD bbsXxt"
         >
           <form>
             <div
-              class="sc-AxmLO liHGsN"
+              class="sc-fzozJi AnIDU"
             >
               <strong>
                 Band name
@@ -25,7 +25,7 @@ Object {
               />
             </div>
             <div
-              class="sc-AxmLO liHGsN"
+              class="sc-fzozJi AnIDU"
             >
               <strong>
                 Band genre
@@ -39,7 +39,7 @@ Object {
               />
             </div>
             <div
-              class="sc-AxmLO liHGsN"
+              class="sc-fzozJi AnIDU"
             >
               <strong>
                 Band formation from
@@ -53,7 +53,7 @@ Object {
               />
             </div>
             <div
-              class="sc-AxmLO liHGsN"
+              class="sc-fzozJi AnIDU"
             >
               <strong>
                 Band formation to
@@ -74,21 +74,41 @@ Object {
             </button>
           </form>
         </div>
-        <div>
+        <div
+          class="sc-AxirZ enylqG"
+        >
           <div
-            class="sc-Axmtr eiXoys"
+            class="sc-AxmLO lbvRck"
           >
-            <a
-              href="/band/1"
+            <div
+              class=""
+              style="width: 33.333333333333336%;"
             >
-              testii
-            </a>
-            <p>
-              finland
-            </p>
-            <p>
-              thrash metal
-            </p>
+              <div>
+                <div
+                  class="sc-Axmtr bwNoNu"
+                >
+                  <a
+                    href="/band/1"
+                    id="band-info-link"
+                  >
+                    <h2>
+                      testii
+                    </h2>
+                  </a>
+                  <img
+                    alt="band"
+                    class="sc-AxiKw hPbuBq"
+                  />
+                  <strong>
+                    finland
+                  </strong>
+                  <p>
+                    thrash metal
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -97,11 +117,11 @@ Object {
   "container": <div>
     <div>
       <div
-        class="sc-fzozJi cGAKRr"
+        class="sc-fzoLsD bbsXxt"
       >
         <form>
           <div
-            class="sc-AxmLO liHGsN"
+            class="sc-fzozJi AnIDU"
           >
             <strong>
               Band name
@@ -115,7 +135,7 @@ Object {
             />
           </div>
           <div
-            class="sc-AxmLO liHGsN"
+            class="sc-fzozJi AnIDU"
           >
             <strong>
               Band genre
@@ -129,7 +149,7 @@ Object {
             />
           </div>
           <div
-            class="sc-AxmLO liHGsN"
+            class="sc-fzozJi AnIDU"
           >
             <strong>
               Band formation from
@@ -143,7 +163,7 @@ Object {
             />
           </div>
           <div
-            class="sc-AxmLO liHGsN"
+            class="sc-fzozJi AnIDU"
           >
             <strong>
               Band formation to
@@ -164,21 +184,41 @@ Object {
           </button>
         </form>
       </div>
-      <div>
+      <div
+        class="sc-AxirZ enylqG"
+      >
         <div
-          class="sc-Axmtr eiXoys"
+          class="sc-AxmLO lbvRck"
         >
-          <a
-            href="/band/1"
+          <div
+            class=""
+            style="width: 33.333333333333336%;"
           >
-            testii
-          </a>
-          <p>
-            finland
-          </p>
-          <p>
-            thrash metal
-          </p>
+            <div>
+              <div
+                class="sc-Axmtr bwNoNu"
+              >
+                <a
+                  href="/band/1"
+                  id="band-info-link"
+                >
+                  <h2>
+                    testii
+                  </h2>
+                </a>
+                <img
+                  alt="band"
+                  class="sc-AxiKw hPbuBq"
+                />
+                <strong>
+                  finland
+                </strong>
+                <p>
+                  thrash metal
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

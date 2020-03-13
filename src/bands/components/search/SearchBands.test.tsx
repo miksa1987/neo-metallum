@@ -55,7 +55,6 @@ describe('SearchBands', () => {
     expect(component).toMatchSnapshot();
   });
 
-  // I don't know wtf I'm doing 
   test('Query is called with correct variables', () => {
     mockUseQuery.mockClear();
 

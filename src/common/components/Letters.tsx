@@ -46,7 +46,11 @@ export const Letters: React.FC<Props> = ({ path }) => {
   return (
     <Layout>
       {letters.map((letter, i) =>
-        <StyledLink key={i} to={`${path}/${letter}`}>
+        <StyledLink
+          id={`${letter}-link`}
+          key={i} 
+          to={`${path}/${letter}`}
+        >
           {letter.toUpperCase()}
         </StyledLink>)}
     </Layout>

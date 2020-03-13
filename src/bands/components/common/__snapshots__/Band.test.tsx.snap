@@ -1,39 +1,61 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Band view Renders correctly 1`] = `
+exports[`Band Snapshot passes 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="sc-AxgMl hParXT"
-      >
+      <div>
         <div
-          class="css-zjo22y"
+          class="sc-Axmtr bwNoNu"
         >
-          <div
-            class="css-hr6ok9"
+          <a
+            href="/band/1"
+            id="band-info-link"
+          >
+            <h2>
+              test
+            </h2>
+          </a>
+          <img
+            alt="band"
+            class="sc-AxiKw hPbuBq"
+            src="/images/band/05.jpg"
           />
-          <div
-            class="css-m3wn5v"
-          />
+          <strong>
+            usa
+          </strong>
+          <p>
+            heavy metal
+          </p>
         </div>
       </div>
     </div>
   </body>,
   "container": <div>
-    <div
-      class="sc-AxgMl hParXT"
-    >
+    <div>
       <div
-        class="css-zjo22y"
+        class="sc-Axmtr bwNoNu"
       >
-        <div
-          class="css-hr6ok9"
+        <a
+          href="/band/1"
+          id="band-info-link"
+        >
+          <h2>
+            test
+          </h2>
+        </a>
+        <img
+          alt="band"
+          class="sc-AxiKw hPbuBq"
+          src="/images/band/05.jpg"
         />
-        <div
-          class="css-m3wn5v"
-        />
+        <strong>
+          usa
+        </strong>
+        <p>
+          heavy metal
+        </p>
       </div>
     </div>
   </div>,

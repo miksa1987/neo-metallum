@@ -10,13 +10,13 @@ describe('TopBar', () => {
   afterEach(cleanup);
 
   test('Snapshot passes', () => {
-    const history = createMemoryHistory()
+    const history = createMemoryHistory();
     const component = render(<Router history={history}><TopBar /></Router>);
     expect(component).toMatchSnapshot();
   });
 
   test('Logo click takes to home URL and changes bandSelect value', () => {
-    const history = createMemoryHistory()
+    const history = createMemoryHistory();
 
     const component = render(<Router history={history}><TopBar /></Router>);
     const homeLink: any = component.container.querySelector('#neo-metallum-logo');
@@ -29,7 +29,7 @@ describe('TopBar', () => {
   });
 
   test('BandSelect by letter changes URL path', () => {
-    const history = createMemoryHistory()
+    const history = createMemoryHistory();
     const component = render(<Router history={history}><TopBar /></Router>);
 
     const bandsSelectByLetter: any = component.container.querySelector('#bands-select-byletter');
@@ -41,7 +41,7 @@ describe('TopBar', () => {
   });
 
   test('Search button changes path', () => {
-    const history = createMemoryHistory()
+    const history = createMemoryHistory();
     const component = render(<Router history={history}><TopBar /></Router>);
 
     const searchButton: any = component.container.querySelector('#search-bands-button');
