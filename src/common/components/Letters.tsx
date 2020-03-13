@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { alphabets } from '../constants';
 
 interface Props {
   path: string
@@ -36,16 +37,9 @@ const StyledLink = styled(Link)`
 `;
 
 export const Letters: React.FC<Props> = ({ path }) => {
-  const letters = [
-    'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
-    'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't',
-    'u', 'v', 'w', 'x', 'z', 'å', 'ä', 'ö', '0', '1',
-    '2', '3', '4', '5', '6', '7', '8', '9'
-  ];
-
   return (
     <Layout>
-      {letters.map((letter, i) =>
+      {alphabets.map((letter, i) =>
         <StyledLink
           id={`${letter}-link`}
           key={i} 

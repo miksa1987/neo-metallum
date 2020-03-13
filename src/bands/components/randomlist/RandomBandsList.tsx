@@ -5,6 +5,9 @@ import { gql } from 'apollo-boost';
 
 import { Loader } from '../../../common';
 import { BandsList } from '../common/BandsList';
+import {
+  alphabets, genres
+} from '../../../common';
 
 const Layout = styled.div`
   display: flex;
@@ -26,18 +29,6 @@ export const RandomBandsList = () => {
   const [ letter, setLetter ] = useState('a');
   const [ genre, setGenre ] = useState('heavy');
 
-  const letters = [ 
-    'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i',
-    'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r',
-    's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '0',
-    '1', '2', '3', '4', '5', '6', '7', '8', '9'
-  ];
-  const genres = [
-    'heavy', 'black', 'thrash', 'death', 'power', 'metalcore',
-    'doom', 'folk', 'gothic', 'speed', 'groove', 'symphonic',
-    'progressive', 'industrial'
-  ];
-
   const { data, loading, error } = useQuery(GET_BANDS_QUERY, { 
     variables: { name: `${letter}**`, genre, start: 0 } 
   });
@@ -48,7 +39,7 @@ export const RandomBandsList = () => {
   }
 
   useEffect(() => {
-    setLetter(getRandomItem(letters));
+    setLetter(getRandomItem(alphabets));
     setGenre(getRandomItem(genres));
   }, []);
 
