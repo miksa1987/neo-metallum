@@ -65,7 +65,6 @@ export const TopBar = () => {
 
     const selectedItem: Item | undefined = bandItems.find(item => item.value === value);
 
-    console.log(selectedItem)
     if (selectedItem !== undefined) {
       history.push(selectedItem.path);
       setSelectedBandItem(selectedItem);

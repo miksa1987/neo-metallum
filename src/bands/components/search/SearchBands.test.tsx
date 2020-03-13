@@ -2,10 +2,8 @@ import React from 'react';
 import '@testing-library/jest-dom/extend-expect';
 import { render, cleanup, fireEvent, act } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
-import { MockedProvider } from '@apollo/react-testing';
-import { gql } from 'apollo-boost'; // For the query to work
 
-import { SearchBands, GET_BANDS_QUERY } from './SearchBands';
+import { SearchBands } from './SearchBands';
 
 const mockUseQuery = jest.fn(() => ({
   data: {
@@ -50,7 +48,6 @@ describe('SearchBands', () => {
         <SearchBands />
       </BrowserRouter>
     );
-    component.debug();
 
     expect(component).toMatchSnapshot();
   });
@@ -68,10 +65,11 @@ describe('SearchBands', () => {
     const genreInput: any = component.container.querySelector('#genre');
     const searchButton: any = component.container.querySelector('#submit-search');
 
+    
     fireEvent.change(nameInput, { target: { value: 'testii' }});
     fireEvent.change(genreInput, { target: { value: 'thrash' }});
     fireEvent.click(searchButton);
-
+    
     const expectedResult = {
       variables: {
         name: 'testii',
