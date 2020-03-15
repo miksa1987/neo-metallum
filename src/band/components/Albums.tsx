@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { AlbumType } from '../band.types';
+import { AlbumType } from '../../common/types';
 import { Album } from './Album';
 
 interface Props {

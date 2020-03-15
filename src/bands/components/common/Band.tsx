@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 import { Image } from '../../../common';
-import { BandType } from '../../../band/band.types';
+import { BandType } from '../../../common/types';
 
 interface Props {
   band: BandType

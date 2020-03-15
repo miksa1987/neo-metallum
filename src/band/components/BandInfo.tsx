@@ -1,21 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { BandType, ArtistType } from '../band.types';
+import { BandType } from '../../common/types';
 
-import { Image } from '../../common';
-
-const Layout = styled.div`
-  display: grid;
-  grid-template: 100% / 1fr 1fr;
-  background-color: #44475a;
-  border: 1px solid black;
-
-  @media screen and (max-width: 1000px) {
-    display: flex;
-    flex-direction: column;
-  }
-`;
+import { Image, Section } from '../../common';
 
 const FlexColumn = styled.div`
   display: flex;
@@ -28,7 +16,7 @@ interface Props {
 
 export const BandInfo: React.FC<Props> = ({ band }) => {
   return (
-    <Layout>
+    <Section>
       <FlexColumn>
         <h1>{band.name}</h1>
         <Image src={band.logoUrl} alt='band logo' />
@@ -42,6 +30,6 @@ export const BandInfo: React.FC<Props> = ({ band }) => {
         <p>Years active: {band.yearsActive}</p>
         <p>Label: {band.label}</p>
       </FlexColumn>
-    </Layout>
+    </Section>
   );
 }

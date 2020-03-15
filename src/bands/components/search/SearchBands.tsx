@@ -3,7 +3,7 @@ import { useQuery } from '@apollo/react-hooks';
 import { gql } from 'apollo-boost';
 
 import { Loader } from '../../../common';
-import { BandType } from '../../../band/band.types';
+import { BandType } from '../../../common/types';
 import { BandsList } from '../common/BandsList';
 import { Fields } from './Fields';
 import { FieldType } from './Field';

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Masonry from 'react-masonry-css';
 
-import { BandType } from '../../../band/band.types';
+import { BandType } from '../../../common/types';
 import { Band } from './Band';
 import { CenteredDiv } from '../../../common';
  

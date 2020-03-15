@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-Axmtr dCRfkC"
+        class="sc-fzplWN jYvGwN"
       >
         <div
           class="sc-AxirZ enylqG"
@@ -16,7 +16,7 @@ Object {
             id="neo-metallum-logo"
           >
             <img
-              class="sc-AxmLO hUFcoG"
+              class="sc-fznyAO jWfuk"
               src="/images/logo.png"
             />
           </a>
@@ -59,7 +59,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-Axmtr dCRfkC"
+      class="sc-fzplWN jYvGwN"
     >
       <div
         class="sc-AxirZ enylqG"
@@ -69,7 +69,7 @@ Object {
           id="neo-metallum-logo"
         >
           <img
-            class="sc-AxmLO hUFcoG"
+            class="sc-fznyAO jWfuk"
             src="/images/logo.png"
           />
         </a>

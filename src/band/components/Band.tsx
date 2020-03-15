@@ -1,13 +1,14 @@
 import React from 'react';
-import styled from 'styled-components';
 import { useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/react-hooks';
 import { gql } from 'apollo-boost';
 
-import { Loader } from '../../common';
+import { 
+  Loader, InformationLayout 
+} from '../../common';
 import { BandInfo } from './BandInfo';
 import { Albums } from './Albums';
-import { Members } from './Members';
+import { Members } from '../../common';
 
 export const GET_BAND_QUERY = gql`
   query findBand($id: String!) {
@@ -36,16 +37,6 @@ export const GET_BAND_QUERY = gql`
   }
 `;
 
-const Layout = styled.div`
-  display: grid;
-  grid-template: 1fr / 1fr 1fr;
-
-  @media screen and (max-width: 750px) {
-    display: flex;
-    flex-direction: column;
-  }
-`;
-
 export const Band = () => {
   const { id } = useParams();
   const { data, loading, error } = useQuery(GET_BAND_QUERY, { variables: { id }});
@@ -61,12 +52,12 @@ export const Band = () => {
   const albums = data.band.albums;
 
   return (
-    <Layout>
+    <InformationLayout>
       <BandInfo band={band} />
       <div>
         <Members members={members} />
         <Albums albums={albums} />
       </div>
-    </Layout>
+    </InformationLayout>
   );
 }

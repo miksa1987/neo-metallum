@@ -8,6 +8,7 @@ import {
 } from '../bands';
 
 import { Band } from '../band';
+import { Album } from '../album';
 
 export const RouterOutput = () => {
   return (
@@ -17,6 +18,7 @@ export const RouterOutput = () => {
         <Route exact path='/bands/search' render={() => <SearchBands />} />
         <Route exact path='/bands/random' render={() => <RandomBand />} />
         <Route exact path='/band/:id' render={() => <Band />} />
+        <Route exact path='/album/:id' render={() => <Album />} />
       </Switch>
   );
 }

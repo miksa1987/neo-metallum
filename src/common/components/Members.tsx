@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { ArtistType } from '../band.types';
+import { ArtistType } from '../types';
 import { Member } from './Member';
 
 interface Props {

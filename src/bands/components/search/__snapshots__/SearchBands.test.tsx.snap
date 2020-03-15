@@ -7,11 +7,11 @@ Object {
     <div>
       <div>
         <div
-          class="sc-fzoLsD bbsXxt"
+          class="sc-fznZeY crAIIR"
         >
           <form>
             <div
-              class="sc-fzozJi AnIDU"
+              class="sc-fznKkj iRpFma"
             >
               <strong>
                 Band name
@@ -25,7 +25,7 @@ Object {
               />
             </div>
             <div
-              class="sc-fzozJi AnIDU"
+              class="sc-fznKkj iRpFma"
             >
               <strong>
                 Band genre
@@ -39,7 +39,7 @@ Object {
               />
             </div>
             <div
-              class="sc-fzozJi AnIDU"
+              class="sc-fznKkj iRpFma"
             >
               <strong>
                 Band formation from
@@ -53,7 +53,7 @@ Object {
               />
             </div>
             <div
-              class="sc-fzozJi AnIDU"
+              class="sc-fznKkj iRpFma"
             >
               <strong>
                 Band formation to
@@ -78,7 +78,7 @@ Object {
           class="sc-AxirZ enylqG"
         >
           <div
-            class="sc-AxmLO lbvRck"
+            class="sc-fznyAO ePjXxu"
           >
             <div
               class=""
@@ -86,7 +86,7 @@ Object {
             >
               <div>
                 <div
-                  class="sc-Axmtr bwNoNu"
+                  class="sc-fzplWN hDAGEZ"
                 >
                   <a
                     href="/band/1"
@@ -99,7 +99,7 @@ Object {
                   <img
                     alt="band"
                     class="sc-AxiKw hPbuBq"
-                    src="/images/band/07.jpg"
+                    src="/images/band/11.jpg"
                   />
                   <strong>
                     finland
@@ -118,11 +118,11 @@ Object {
   "container": <div>
     <div>
       <div
-        class="sc-fzoLsD bbsXxt"
+        class="sc-fznZeY crAIIR"
       >
         <form>
           <div
-            class="sc-fzozJi AnIDU"
+            class="sc-fznKkj iRpFma"
           >
             <strong>
               Band name
@@ -136,7 +136,7 @@ Object {
             />
           </div>
           <div
-            class="sc-fzozJi AnIDU"
+            class="sc-fznKkj iRpFma"
           >
             <strong>
               Band genre
@@ -150,7 +150,7 @@ Object {
             />
           </div>
           <div
-            class="sc-fzozJi AnIDU"
+            class="sc-fznKkj iRpFma"
           >
             <strong>
               Band formation from
@@ -164,7 +164,7 @@ Object {
             />
           </div>
           <div
-            class="sc-fzozJi AnIDU"
+            class="sc-fznKkj iRpFma"
           >
             <strong>
               Band formation to
@@ -189,7 +189,7 @@ Object {
         class="sc-AxirZ enylqG"
       >
         <div
-          class="sc-AxmLO lbvRck"
+          class="sc-fznyAO ePjXxu"
         >
           <div
             class=""
@@ -197,7 +197,7 @@ Object {
           >
             <div>
               <div
-                class="sc-Axmtr bwNoNu"
+                class="sc-fzplWN hDAGEZ"
               >
                 <a
                   href="/band/1"
@@ -210,7 +210,7 @@ Object {
                 <img
                   alt="band"
                   class="sc-AxiKw hPbuBq"
-                  src="/images/band/07.jpg"
+                  src="/images/band/11.jpg"
                 />
                 <strong>
                   finland
