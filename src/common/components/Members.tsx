@@ -18,7 +18,7 @@ export const Members: React.FC<Props> = ({ members }) => {
   return (
     <Layout>
       <h3>Members: </h3>
-      {members.length > 0 && members.map((member) => <Member key={member.id} member={member} />)}
+      {members.length > 0 && members.map((member, idx) => <Member key={idx} member={member} />)}
       {members.length === 0 && <p>Unknown</p>}
     </Layout>
   );
