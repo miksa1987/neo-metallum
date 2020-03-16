@@ -29,8 +29,8 @@ export interface AlbumType {
 
 export interface ArtistType {
   id?: string
-  name: string
-  role: string
+  name?: string
+  role?: string
   gender?: string
   origin?: string
   age?: string

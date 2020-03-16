@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+
 import { ArtistType } from '../types';
 import { ListItem } from '../../common';
 
@@ -14,7 +16,9 @@ const Layout = styled(ListItem)`
 export const Member: React.FC<Props> = ({ member }) => {
   return (
     <Layout>
-      <strong>{member.name}</strong>
+      <Link to={`/artist/${member.id}`}>
+        <strong>{member.name}</strong>
+      </Link>
       <p>{member.role}</p>
     </Layout>
   );
