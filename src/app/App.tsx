@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import { TopBar } from './TopBar';
 import { RouterOutput } from './RouterOutput';
@@ -7,10 +7,10 @@ import { RouterOutput } from './RouterOutput';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <Router>
       <TopBar/>
       <RouterOutput />
-    </BrowserRouter>
+    </Router>
   );
 }
 
