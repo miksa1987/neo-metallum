@@ -10,3 +10,5 @@ export const alphabets = [
   'u', 'v', 'w', 'x', 'z', 'å', 'ä', 'ö', '0', '1',
   '2', '3', '4', '5', '6', '7', '8', '9'
 ];
+
+export const notificationTimeout = 3000; // In milliseconds

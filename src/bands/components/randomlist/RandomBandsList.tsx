@@ -6,7 +6,7 @@ import { gql } from 'apollo-boost';
 import { Loader } from '../../../common';
 import { BandsList } from '../common/BandsList';
 import {
-  alphabets, genres
+  alphabets, genres, Notification
 } from '../../../common';
 
 const Layout = styled.div`
@@ -45,6 +45,12 @@ export const RandomBandsList = () => {
 
   if (loading) {
     return ( <Loader /> );
+  }
+
+  if (error) {
+    return (
+      <Notification message='Something went wrong. Could not find album.' />
+    );
   }
 
   return (

@@ -6,6 +6,7 @@ import { Letters } from './components/Letters';
 import { ListItem } from './components/ListItem';
 import { Loader } from './components/Loader';
 import { Members } from './components/Members';
+import { Notification } from './components/Notification';
 import { PageChangerButtons } from './components/PageChangerButtons';
 import { Section } from './components/Section';
 import { SwipeablePage } from './components/SwipeablePage';
@@ -23,6 +24,7 @@ export {
   ListItem,
   Loader,
   Members,
+  Notification,
   PageChangerButtons,
   Section,
   SwipeablePage,

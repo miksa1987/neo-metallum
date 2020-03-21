@@ -6,7 +6,7 @@ import { useQuery } from '@apollo/react-hooks';
 import { gql } from 'apollo-boost';
 
 import { 
-  Loader, Members
+  Loader, Members, Notification
 } from '../../common';
 
 import { Songs } from './Songs';
@@ -60,9 +60,15 @@ const StyledMasonry = styled(Masonry)`
 export const Album = () => {
   const { id } = useParams();
   const { data, loading, error } = useQuery(GET_ALBUM_QUERY, { variables: { id } });
-
+ 
   if (loading) {
     return <Loader />;
+  }
+
+  if (error) {
+    return (
+      <Notification message='Something went wrong. Could not find album.' />
+    );
   }
 
   const breakPoints = {

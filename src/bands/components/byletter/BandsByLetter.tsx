@@ -6,7 +6,9 @@ import { gql } from 'apollo-boost';
 
 import { Loader } from '../../../common';
 import { Letters } from '../../../common';
-import { SwipeablePage, PageChangerButtons } from '../../../common';
+import {
+  SwipeablePage, PageChangerButtons, Notification 
+} from '../../../common';
 import { BandsList } from '../common/BandsList';
 
 const Layout = styled.div`
@@ -44,6 +46,13 @@ export const BandsByLetter = () => {
   if (loading) {
     return ( <Loader /> );
   }
+
+  if (error) {
+    return (
+      <Notification message='Something went wrong. Could not find album.' />
+    );
+  }
+
   return (
     <Layout>
       <h2>Bands by letter</h2>

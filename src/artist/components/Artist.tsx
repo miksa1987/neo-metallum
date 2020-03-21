@@ -6,7 +6,7 @@ import { useQuery } from '@apollo/react-hooks';
 import { gql } from 'apollo-boost';
 
 import { 
-  Loader
+  Loader, Notification
 } from '../../common';
 import { ArtistInfo } from './ArtistInfo';
 import { ArtistHeaderAndImage } from './ArtistHeaderAndImage';
@@ -37,7 +37,6 @@ const StyledMasonry = styled(Masonry)`
 `;
 
 export const Artist = () => {
-  const history = useHistory();
   const { id } = useParams();
   const { data, loading, error } = useQuery(GET_ARTIST_QUERY, { variables: { id } });
 
@@ -46,8 +45,9 @@ export const Artist = () => {
   }
 
   if (error) {
-    history.goBack();
-    return <Loader />;
+    return (
+      <Notification message='Something went wrong. Could not find album.' />
+    );
   }
 
   const breakPoints = {

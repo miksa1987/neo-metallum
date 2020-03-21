@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Link, useHistory } from 'react-router-dom';
 
+import { useNotification } from '../common';
 import {
   CenteredDiv
 } from '../common';
@@ -57,6 +58,7 @@ const bandItems: Item[] = [
 
 export const TopBar = () => {
   const history = useHistory();
+  const setMessage = useNotification();
 
   const [ selectedBandItem, setSelectedBandItem ] = useState(bandItems[0]);
 
@@ -105,6 +107,7 @@ export const TopBar = () => {
         <button id='search-bands-button' onClick={() => history.push('/bands/search')}>
           Search
         </button>
+        <button onClick={() => setMessage('JEEEE')}>JEE</button>
       </CenteredDiv>
     </Layout>
   );

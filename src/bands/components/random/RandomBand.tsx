@@ -2,7 +2,7 @@ import React from 'react';
 import { Redirect } from 'react-router-dom';
 import { useQuery } from '@apollo/react-hooks';
 import { gql } from 'apollo-boost';
-import { Loader } from '../../../common';
+import { Loader, Notification } from '../../../common';
 
 const GET_RANDOM_BAND_QUERY = gql`
   query {
@@ -17,6 +17,12 @@ export const RandomBand = () => {
 
   if (loading) {
     return <Loader />;
+  }
+
+  if (error) {
+    return (
+      <Notification message='Something went wrong. Could not find album.' />
+    );
   }
 
   const id = data.randomBand.id;

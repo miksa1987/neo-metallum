@@ -4,7 +4,7 @@ import { useQuery } from '@apollo/react-hooks';
 import { gql } from 'apollo-boost';
 
 import { 
-  Loader, InformationLayout 
+  Loader, InformationLayout, Notification
 } from '../../common';
 import { BandInfo } from './BandInfo';
 import { Albums } from './Albums';
@@ -43,6 +43,12 @@ export const Band = () => {
 
   if (loading) {
     return ( <Loader /> );
+  }
+
+  if (error) {
+    return (
+      <Notification message='Something went wrong. Could not find album.' />
+    );
   }
 
   const { band: { name, genre, country, location, status, label, yearsActive, photoUrl, logoUrl } } = data;
